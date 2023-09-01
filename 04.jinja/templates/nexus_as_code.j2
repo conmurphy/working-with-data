@@ -1,0 +1,29 @@
+---
+apic:
+  tenants:
+    - name: production
+      managed: false
+      bridge_domains: 
+        {% for vlan in range(1, num_of_vlans+1) %}
+        - name: 192.168.{{vlan}}.0_24
+          vrf: production.vrf1
+          subnets: 
+            - ip: 192.168.{{vlan}}.1/24
+        {% endfor %}
+
+      application_profiles:
+        - name: network-segments
+          managed: false
+          endpoint_groups:
+            {% for vlan in range(1, num_of_vlans+1) %}
+            - name: 192.168.{{vlan}}.0_24
+              bridge_domain: 192.168.{{vlan}}.0_24
+              physical_domains:
+                - servers
+              static_ports:
+                {%- for switch in range(1, num_of_switches+1) %}
+                  {%- for port in range(1, num_of_ports+1) %}
+                - {vlan: {{ vlan }}, pod_id: 1, node_id: 10{{switch}}, port: {{port}}}
+                  {%- endfor %}
+                {%- endfor %}
+            {% endfor -%}

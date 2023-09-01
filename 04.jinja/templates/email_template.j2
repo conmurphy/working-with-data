@@ -1,0 +1,27 @@
+Hello {{first_name}},
+
+I created this email using a Jinja template. 
+
+Jinja makes it very easy to create documents of any kind, for example I can easily print a list of things:
+
+{% for thing in list_of_things -%}
+- {{thing}}
+{% endfor %}
+
+If I want to only show some things I can use a conditional statement
+
+{%- for number in range(1, 20) %}
+    {%- if number%2 == 0 %}
+        The number {{number}} is even!
+    {%- else %}
+        The number {{number}} is odd!
+    {%- endif %}
+{%- endfor %}
+
+{#
+    This is a comment block and won't appear in the output file. 
+    
+    "If you add a minus sign (-) to the start or end of a block (e.g. a For tag), a comment, or a variable expression, the whitespaces before or after that block will be removed:"
+
+#}
+

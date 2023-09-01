@@ -1,0 +1,18 @@
+id: 14
+name: Alice
+email: alice@user.biz
+phone: 024-648-3804
+username: alice.user
+website: website.com
+address:
+    city: Some City
+    geo:
+    lat: '-38.2386'
+    lng: '57.2232'
+    street: 123 Fake St
+    suite: ''
+    zipcode: 31428-2261
+company:
+    bs: ''
+    catchPhrase: ''
+    name: Alice's Company
