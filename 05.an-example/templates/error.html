@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+    <style>
+        .alert {
+          padding: 20px;
+          background-color: #f44336;
+          color: white;
+        }
+        
+        .closebtn {
+          margin-left: 15px;
+          color: white;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        
+        .closebtn:hover {
+          color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <h2>This is a basic packet parser</h2>
+    <h3>{{ utc_dt }}</h3>
+
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <strong>Something went wrong: </strong> {{error}}
+    </div>
+</body>
+</html>
