@@ -1,0 +1,16 @@
+NAMESPACE     NAME                                        READY   STATUS             RESTARTS      AGE
+default       failing-pod1                                0/1     ErrImagePull       0             14s
+default       failing-pod2                                0/1     ErrImagePull       0             9s
+kube-system   coredns-6d4b75cb6d-g68tt                    1/1     Running            3 (93s ago)   17h
+kube-system   etcd-working-with-data                      1/1     Running            3 (93s ago)   17h
+kube-system   kindnet-7xk4v                               1/1     Running            1 (60s ago)   17h
+kube-system   kindnet-jtpp9                               1/1     Running            1 (93s ago)   17h
+kube-system   kindnet-ttg2z                               1/1     Running            1 (77s ago)   17h
+kube-system   kube-apiserver-working-with-data            1/1     Running            2 (93s ago)   17h
+kube-system   kube-controller-manager-working-with-data   1/1     Running            3 (93s ago)   17h
+kube-system   kube-proxy-txk9p                            1/1     Running            1 (77s ago)   17h
+kube-system   kube-proxy-xqqss                            1/1     Running            2 (93s ago)   17h
+kube-system   kube-proxy-z2j88                            1/1     Running            1 (60s ago)   17h
+kube-system   kube-scheduler-working-with-data            1/1     Running            2 (93s ago)   17h
+kube-system   storage-provisioner                         1/1     Running            5 (49s ago)   17h
+my-app        failing-pod3                                0/1     ImagePullBackOff   0             19s
