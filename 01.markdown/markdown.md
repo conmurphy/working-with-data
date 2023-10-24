@@ -77,10 +77,10 @@ company:
 
 ```
 
-### Diagrams
+### Diagrams - note this may not display correctly in the VSCode Markdown Preview
 
 ```mermaid
-graph TD
+flowchart TD
     A[Start: Issue Reported]
     B{Is it a known issue?}
     C[Lookup Documentation]

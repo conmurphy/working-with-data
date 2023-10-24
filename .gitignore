@@ -1,3 +1,7 @@
+# Specific to this lab
+sample_data.xlsb
+*.xlsx
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
