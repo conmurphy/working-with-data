@@ -80,7 +80,7 @@ company:
 ### Diagrams
 
 ```mermaid
-flowchart TD
+graph TD
     A[Start: Issue Reported]
     B{Is it a known issue?}
     C[Lookup Documentation]
