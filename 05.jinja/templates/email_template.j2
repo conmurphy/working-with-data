@@ -8,6 +8,12 @@ Jinja makes it very easy to create documents of any kind, for example I can easi
 - {{thing}}
 {% endfor %}
 
+I can also filter to transform the output, for example to uppercase
+
+{% for thing in list_of_things -%}
+- {{thing | upper}}
+{% endfor %}
+
 If I want to only show some things I can use a conditional statement
 
 {%- for number in range(1, 20) %}
