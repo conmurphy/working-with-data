@@ -12,6 +12,13 @@ See the following documentation to learn more about jq
 
 [https://jqlang.github.io/jq/](https://jqlang.github.io/jq/)
 
+##### Install`jq` if not already installed
+
+
+```bash
+sudo apt-get install -y jq
+```
+
 ##### Request the JSON users content from the previous example and pass it to `jq`
 
 
