@@ -26,6 +26,13 @@ sudo apt-get install -y jq
 curl -s 'https://jsonplaceholder.typicode.com/users' | jq .
 ```
 
+##### If you are running these commands from the CLI and not from the Jupyter Notebook you will need to first change into the CLI tools lab directory
+
+
+```bash
+cd "03.cli"
+```
+
 ##### Read the `basic_example.json` file
 
 
